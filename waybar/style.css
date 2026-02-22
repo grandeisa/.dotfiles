@@ -2,13 +2,14 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: SymbolsOnly, Roboto, Helvetica, Arial, sans-serif, "Hack Nerd Font";
     font-size: 13px;
+    color: #f69a3e;
 }
 
 window#waybar {
     /*background-color: rgba(43, 48, 59, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
     background-color: transparent;
-    color: #ffffff;
+    /* color: #ffffff; */
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -58,7 +59,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    /* color: #ffffff; */
     border-radius: 4px;
 }
 
@@ -116,12 +117,14 @@ button:hover {
 
 
 #window, #workspaces, .modules-right, .modules-center {
-    background-color: rgba(171, 70, 218, 0.3);
-    border-color: rgba(171, 70, 218, 0.7);
+    background-color: rgba(115, 58, 8, 0.3);
+    border-color: #ff8100;
     border-style: solid;
     border-width: 2px;
     border-radius: 4px;
     margin: 5 5px;
+    box-shadow: 0 0 3 1 rgba(255, 129, 0, 0.5);
+    text-shadow: 0 0 2 rgba(255, 129, 0, 0.5);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -134,14 +137,17 @@ button:hover {
     margin-right: 0;
 }
 
+/*
 #clock {
     color: #d9e5ee;
 }
+*/
 
+/*
 #battery {
     color: #ffffff;
 }
-
+*/
 #battery.charging, #battery.plugged {
     color: #26A65B;
 }
@@ -156,7 +162,7 @@ button:hover {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
+    /* color: #ffffff; */
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -338,7 +344,7 @@ label:focus {
 }
 
 #custom-power {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 12;
     padding-right: 10;
 }
@@ -352,5 +358,5 @@ label:focus {
 menu {
     border-radius: 20;
     background-color: #1f1e1f;
-    color: #ffffff;
+    /* color: #ffffff; */
 }
