@@ -1,14 +1,17 @@
-**Note**: There is an example _bashrc_ file in this repo.
+# Setup
 
-Add the following line to your ```.bashrc```:
+**Note:** The following instructions assume that you have cloned the repo at ```~/.dotfiles```.
 
-```export DOTFILES="..."```
+Add the following lines to your _.bash_profile_:
 
-Replace the ... with the repo's path
+```
+source ~/.dotfiles/bash_profile.sh
+```
 
+Add the following line to your _.bash_rc_:
 
-# Niri
+```
+source $DOTFILES/.bashrc.sh
+```
 
-Add the following line to your ```.bashrc```:
-
-```export NIRI_CONFIG="$DOTFILES/niri/config.kdl```
+Reboot your session.
