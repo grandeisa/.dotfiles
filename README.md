@@ -11,7 +11,7 @@ source ~/.dotfiles/bash_profile.sh
 Add the following line to your _.bash_rc_:
 
 ```
-source $DOTFILES/.bashrc.sh
+source $DOTFILES/bashrc.sh
 ```
 
 Reboot your session.
