@@ -622,9 +622,35 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // Toggle swaync control center
+    Mod+Shift+N { spawn-sh "swaync-client -t -sw";}
 }
 
-// General windows
+// For opening non-main Godot window as floating (Such as game debug)
+// Assumes that Godot has Wayland rendering toggled on
+window-rule {
+    match title="Godot$"
+
+    open-floating true
+
+}
+
+// Open apps maximized
+window-rule {
+    match app-id="firefox$"
+    match app-id="Godot" title="Godot"
+    match app-id="libresprite$"
+    match app-id="org.godotengine.ProjectManager$"
+    match app-id="org.godotengine.Editor$"
+    match app-id="visual-studio-code$"
+    match app-id="code$"
+
+    open-maximized true
+    open-floating false
+}
+
+// General window geometry
 window-rule {
     geometry-corner-radius 8
     clip-to-geometry true
@@ -641,5 +667,5 @@ window-rule {
     }
 }
 
-
+spawn-at-startup "swaync"
 spawn-sh-at-startup "waypaper --restore"
