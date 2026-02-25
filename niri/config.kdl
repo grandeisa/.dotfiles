@@ -642,4 +642,4 @@ window-rule {
 }
 
 
-spawn-sh-at-startup "swaybg -i ~/Pictures/wallpaper/aperture-labs-orange.jpg -m center"
+spawn-sh-at-startup "waypaper --restore"
