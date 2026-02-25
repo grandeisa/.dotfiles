@@ -1,0 +1,1 @@
+- Aperture Science Logo ASCII version by: [Jamison Judd](https://archive.jamisonjudd.com/aperture-science-logo/)
