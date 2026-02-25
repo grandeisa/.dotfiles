@@ -7,6 +7,7 @@
 - [playerctl](https://github.com/altdesktop/playerctl)
 - [waypaper](https://github.com/anufrievroman/waypaper)
 - [swaybg](https://github.com/swaywm/swaybg)
+- [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
 
 # Setup
 
@@ -25,3 +26,7 @@ source $DOTFILES/bashrc.sh
 ```
 
 Reboot your session.
+
+# .installs
+
+The default bash_profile configuration adds the ```~/.installs``` folder to your path, use wisely.
